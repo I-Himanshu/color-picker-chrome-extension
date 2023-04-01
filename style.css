@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.picker{
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+}
+.color-picker button{
+    background-color: #2310ca;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;
+}
+.clear-all-btn{
+    color: blue;
+    font-size: 0.9rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.colors header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-inline: 2rem;
+    gap: 5rem;
+}
+.colors header h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.colors ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.colors ul li{
+    list-style: none;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    --color: attr(data-color);
+}
+.colors ul li .color{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.hide{
+    display: none;
+}
